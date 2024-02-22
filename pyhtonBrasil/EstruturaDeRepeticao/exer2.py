@@ -1,6 +1,9 @@
 #Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
 
 '''
+TENTATIVA 1 
+
+
 while True:
     nome = input('Digite o usuario: ')
     senha = input('Digite a senha: ')
@@ -16,6 +19,8 @@ while True:
         break
 
 '''
+#TENTATIVA 2
+
 print('Cadastro de usuario')
 nome = input('Digite um nome de usuario: ')
 senha = input('Digite uma senha: ')
@@ -25,4 +30,4 @@ while nome == senha:
     nome = input('Digite um nome de usuario: ')
     senha = input('Digite uma senha: ')
 
-print('Cadastrado com sucesso')   
+print('Cadastrado com sucesso')
