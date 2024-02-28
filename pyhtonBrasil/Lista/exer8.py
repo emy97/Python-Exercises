@@ -12,7 +12,9 @@ for i in range(3):
     idade = int(input(f'Digite sua idade: '))
     idades.append(idade)
 
-print(idades.reverse())
-print(alturas.reverse())
+idades.reverse()
+alturas.reverse()
+print(f'Idades:{idades}')
+print(f'Alturas: {alturas}')
 
 ...
