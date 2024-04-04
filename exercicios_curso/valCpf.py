@@ -83,6 +83,8 @@ mult_calculo = soma_calculo * 10
 
 resto = mult_calculo % 11
 
+print(f'resto : {resto}')
+
 if resto > 9 :
     print(f'resultado do primeiro digito é {primeiro_digito}')
     primeiro_digito = 0
@@ -100,14 +102,22 @@ resto = 0
 
 #Calculo digito 2
 contador = 11
-for digito in nove_digitos:
+dez_digitos = nove_digitos + str(primeiro_digito)
+
+print(dez_digitos)
+for digito in dez_digitos:
     calculo = int(digito) * contador
     seg_cpf_conta.append(calculo)
     contador -= 1
 
-soma_calculo = (sum(cpf_conta)) * 10
+print(seg_cpf_conta)
 
+soma_calculo = (sum(seg_cpf_conta)) * 10
+print(soma_calculo)
 resto = soma_calculo % 11
+print(resto)
+
+
 if soma_calculo % 11 > 9:
     segundo_digito = 0
     print(f'resultado do segundo digito é {segundo_digito}')
